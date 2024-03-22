@@ -7,6 +7,7 @@ create_time: 2020/4/22 5:17 下午
 import os.path
 
 # local codebase
+
 codebase_path = os.path.dirname(os.path.realpath(__file__)) + "/../../graph"
 
 # apache release version
@@ -48,7 +49,7 @@ test_password = {'tester': '123456'}
 
 # toolchain (includes loader, hubble, tools)
 toolchain_git = {
-    'branch': 'd707163b5ad379429edb1ae98802ab59141c50be',
+    'branch': '7bfcd665515e58a2f618851cb6da9b1c3ee5b4de',
     'url': 'https://github.com/apache/hugegraph-toolchain.git'
 }
 
