@@ -26,6 +26,13 @@ loader_path = os.path.join(codebase_path, toolchain_gen_dir, toolchain_obj_templ
 hubble_path = os.path.join(codebase_path, toolchain_gen_dir, toolchain_obj_template.format(tool_name='hubble'))
 tools_path = os.path.join(codebase_path, toolchain_gen_dir, toolchain_obj_template.format(tool_name='tools'))
 
+print("=============================================================")
+print("=============================================================")
+print("=============================================================")
+print(tools_path)
+print("=============================================================")
+print("=============================================================")
+
 # common
 is_auth = False
 is_https = False
