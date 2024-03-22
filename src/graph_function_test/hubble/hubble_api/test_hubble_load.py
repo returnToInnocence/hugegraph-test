@@ -34,7 +34,7 @@ def init_graph():
 
     code, res = GraphConnection().get_graph_connect()
     assert code == 200
-    print("对测试环境进行初始化操作")
+    print("GraphConnection().get_graph_connect()结果如下")
     print(code, res)
     connection_list = res['data']['records']
     for each in connection_list:
@@ -73,6 +73,7 @@ class LoadTest(unittest.TestCase):
             body['password'] = _cfg.admin_password.get('admin')
         init_graph()
         code, res = GraphConnection().add_graph_connect(body)
+        print("GraphConnection().add_graph_connect(body)结果如下：")
         print(code, res)
         assert code == 200
         query = {
